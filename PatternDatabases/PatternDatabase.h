@@ -1,7 +1,3 @@
-//
-// Created by Lakshya Mittal on 17-02-2022.
-//
-
 #ifndef RUBIKS_CUBE_SOLVER_PATTERNDATABASE_H
 #define RUBIKS_CUBE_SOLVER_PATTERNDATABASE_H
 
@@ -11,7 +7,8 @@
 
 using namespace std;
 
-class PatternDatabase {
+class PatternDatabase
+{
 
     NibbleArray database;
     size_t size;
@@ -21,7 +18,6 @@ class PatternDatabase {
 
 public:
     PatternDatabase(const size_t size);
-//    Testing for init_val
     PatternDatabase(const size_t size, uint8_t init_val);
 
     virtual uint32_t getDatabaseIndex(const RubiksCube &cube) const = 0;
@@ -49,5 +45,4 @@ public:
     virtual void reset();
 };
 
-
-#endif //RUBIKS_CUBE_SOLVER_PATTERNDATABASE_H
+#endif // RUBIKS_CUBE_SOLVER_PATTERNDATABASE_H
