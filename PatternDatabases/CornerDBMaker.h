@@ -19,4 +19,4 @@ public:
     bool bfsAndStore();
 };
 
-#endif // RUBIKS_CUBE_SOLVER_CORNERDBMAKER_H
+#endif
